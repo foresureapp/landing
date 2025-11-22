@@ -79,7 +79,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // 3. Typewriter Effect
-    const textToType = "CONSENSUS";
+    const textToType = "MARKET";
     const typeWriterElement = document.getElementById('typewriter');
     let typeIndex = 0;
 
@@ -322,14 +322,14 @@ document.addEventListener('DOMContentLoaded', () => {
     // 6. System Logs Simulation
     const terminalOutput = document.getElementById('terminal-output');
     const logMessages = [
-        { type: 'info', text: 'New market created: BTC/USD > 100k' },
-        { type: 'success', text: 'Trade executed: 5000 shares [YES] @ 0.45' },
-        { type: 'info', text: 'Oracle verification pending for Market #882' },
-        { type: 'warn', text: 'High volatility detected in sector: POLITICS' },
-        { type: 'success', text: 'Liquidity added: 100 ETH to pool #12' },
-        { type: 'info', text: 'User 0x7a...f9 connected' },
-        { type: 'success', text: 'Market #881 resolved: OUTCOME_YES' },
-        { type: 'info', text: 'Syncing with L2 node...' }
+        { type: 'info', text: 'Are you still getting rekted at pump tokens?' },
+        { type: 'success', text: 'No one can rug you. Predict and earn' },
+        { type: 'info', text: 'Jury verification pending for PRED #888' },
+        { type: 'warn', text: 'You dont miss this opportunity, add Liquidty to earn risk free' },
+        { type: 'success', text: 'Liquidity added: 1000 USDC to your PRED pool' },
+        { type: 'info', text: 'Your financial freedom is resolved' },
+        { type: 'success', text: 'PRED Market #888 resolved: OUTCOME_5' },
+        { type: 'info', text: 'Syncing with MAINNET node...' }
     ];
 
     function addLogEntry() {
