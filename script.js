@@ -158,7 +158,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     y: rand(0, h),
                     vx: rand(-0.25, 0.25),
                     vy: rand(-0.25, 0.25),
-                    r: rand(1.2, 2.4),
+                    r: rand(1.8, 3.2),
                     glow: rand(0.5, 1),
                 });
             }
@@ -227,7 +227,7 @@ document.addEventListener('DOMContentLoaded', () => {
                                 const d2 = dx * dx + dy * dy;
                                 if (d2 < linkDist * linkDist) {
                                     const alpha = 0.05 + (1 - d2 / (linkDist * linkDist)) * 0.18;
-                                    ctx.strokeStyle = `rgba(255, 161, 0, ${alpha})`; // Orange accent
+                                    ctx.strokeStyle = `rgba(255, 106, 0, ${alpha})`; // Orange accent
                                     ctx.lineWidth = 1;
                                     ctx.beginPath();
                                     ctx.moveTo(a.x, a.y);
@@ -248,12 +248,12 @@ document.addEventListener('DOMContentLoaded', () => {
                     const dx = p.x - mouse.x;
                     const dy = p.y - mouse.y;
                     const d2 = dx * dx + dy * dy;
-                    if (d2 < highlightR * highlightR) r = Math.min(3.2, p.r + 0.9);
+                    if (d2 < highlightR * highlightR) r = Math.min(4.2, p.r + 0.9);
                 }
                 ctx.beginPath();
                 ctx.arc(p.x, p.y, r, 0, Math.PI * 2);
-                ctx.fillStyle = `rgba(255, 180, 80, ${0.85})`; // Orange tint
-                ctx.shadowColor = 'rgba(255,120,0,0.6)';
+                ctx.fillStyle = `rgba(255, 106, 0, ${0.85})`; // Orange tint
+                ctx.shadowColor = 'rgba(255,120,0,0.8)';
                 ctx.shadowBlur = 6 * p.glow;
                 ctx.fill();
                 ctx.shadowBlur = 0;
