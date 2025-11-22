@@ -1,0 +1,15 @@
+{
+    "name": "Foresure Prediction Protocol",
+    "short_name": "Foresure",
+    "start_url": "./index.html",
+    "display": "standalone",
+    "background_color": "#050505",
+    "theme_color": "#FFA100",
+    "icons": [
+        {
+            "src": "logo.svg",
+            "sizes": "any",
+            "type": "image/svg+xml"
+        }
+    ]
+}

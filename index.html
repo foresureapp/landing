@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PREDICT // FUTURE_MARKETS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;400;700&family=Space+Grotesk:wght@300;500;700&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=Baumans&family=Genos:ital,wght@0,100..900;1,100..900&family=SUSE:ital,wght@0,100..900;1,100..900&family=Zen+Dots&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/svg+xml" href="logo.svg">
+    <link rel="manifest" href="site.webmanifest">
+</head>
+
+<body>
+    <!-- Background Elements -->
+    <div class="noise-overlay"></div>
+    <div class="grid-background"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">
+            <span class="logo-symbol"><img src="logo.svg" alt="Foresure Logo" style="height: 24px; width: auto;"></span>
+            <span class="logo-text accent">FORESURE</span>
+        </div>
+        <div class="nav-links">
+            <a href="#markets" class="nav-item">MARKETS</a>
+            <a href="#governance" class="nav-item">GOVERNANCE</a>
+            <a href="#docs" class="nav-item">DOCS</a>
+        </div>
+        <button class="btn-primary glitch-effect" data-text="CONNECT_WALLET">
+            CONNECT_WALLET
+        </button>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="hero">
+        <!-- Network Animation Canvas -->
+        <div class="hero-visual">
+            <canvas id="particles"></canvas>
+        </div>
+
+        <div class="hero-content">
+            <div class="status-badge">
+                <span class="status-dot"></span>
+                TESTNET_AVAILABLE // 15 DEC 2025
+            </div>
+            <p class="highlight reveal-text">// DECENTRALIZEDCONSENSUS</p>
+            <h1 class="hero-title">
+                <span class="line-1">DECENTRALIZED</span>
+                <span class="line-2">PREDICTION</span>
+                <span class="line-3">
+                    <span id="typewriter"></span><span class="cursor"></span>
+                </span>
+            </h1>
+            <p class="hero-subtitle">
+                Trade on the outcome of future events.
+                <br>Zero intermediaries. Pure data.
+            </p>
+            <div class="hero-actions">
+                <button class="btn-large">
+                    <span class="btn-content glitch-effect" data-text="INITIALIZE_TRADING">INITIALIZE_TRADING</span>
+                    <span class="btn-decoration"></span>
+                </button>
+                <button class="btn-text glitch-effect" data-text="VIEW_DOCUMENTATION">
+                    VIEW_DOCUMENTATION ->
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Ticker Tape -->
+    <div class="ticker-container">
+        <div class="ticker-track">
+            <span class="ticker-item">BTC/USD $98,420 [+2.4%]</span>
+            <span class="separator">//</span>
+            <span class="ticker-item">ETH/USD $3,850 [+1.1%]</span>
+            <span class="separator">//</span>
+            <span class="ticker-item">FED_RATE_DECISION [NO_CHANGE: 65%]</span>
+            <span class="separator">//</span>
+            <span class="ticker-item">US_ELECTION_2028 [DEM: 45% / REP: 48%]</span>
+            <span class="separator">//</span>
+            <span class="ticker-item">SPACEX_MARS_LANDING [2029: 12%]</span>
+            <span class="separator">//</span>
+        </div>
+    </div>
+
+    <!-- Features Grid -->
+    <section class="features section-padding" id="features">
+        <div class="section-header">
+            <h2 class="section-title">PROTOCOL_ARCH</h2>
+            <div class="section-line"></div>
+        </div>
+
+        <div class="grid-container">
+            <div class="feature-card" data-scroll>
+                <div class="card-icon">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="1.5">
+                        <rect x="3" y="3" width="18" height="18" rx="2" />
+                        <path d="M3 9h18" />
+                        <path d="M9 21V9" />
+                    </svg>
+                </div>
+                <h3>SMART_CONTRACTS</h3>
+                <p>Immutable execution of market outcomes based on optimistic oracle resolution.</p>
+            </div>
+
+            <div class="feature-card" data-scroll>
+                <div class="card-icon">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="1.5">
+                        <path d="M21 12V7a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v5" />
+                        <path d="M3 12l9 9 9-9" />
+                    </svg>
+                </div>
+                <h3>DEEP_LIQUIDITY</h3>
+                <p>Automated Market Makers (AMM) pools ensure constant liquidity for all market pairs.</p>
+            </div>
+
+            <div class="feature-card" data-scroll>
+                <div class="card-icon">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="1.5">
+                        <circle cx="12" cy="12" r="10" />
+                        <line x1="2" y1="12" x2="22" y2="12" />
+                        <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1 4-10z" />
+                    </svg>
+                </div>
+                <h3>GLOBAL_ACCESS</h3>
+                <p>Permissionless architecture allows anyone, anywhere to trade on information.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works section-padding">
+        <div class="section-header">
+            <h2 class="section-title">EXECUTION_FLOW</h2>
+            <div class="section-line"></div>
+        </div>
+
+        <div class="steps-container">
+            <div class="step-item reveal-up">
+                <div class="step-number">01</div>
+                <div class="step-content">
+                    <h3>SELECT_MARKET</h3>
+                    <p>Browse available prediction markets or create your own. Filter by category, volume, or liquidity
+                        depth.</p>
+                </div>
+            </div>
+            <div class="step-item reveal-up">
+                <div class="step-number">02</div>
+                <div class="step-content">
+                    <h3>TAKE_POSITION</h3>
+                    <p>Purchase "YES" or "NO" outcome shares. Prices fluctuate based on real-time market probability.
+                    </p>
+                </div>
+            </div>
+            <div class="step-item reveal-up">
+                <div class="step-number">03</div>
+                <div class="step-content">
+                    <h3>RESOLUTION</h3>
+                    <p>Once the event occurs, the oracle verifies the outcome. Winning shares are redeemable for $1.00.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Roadmap Section -->
+    <section class="roadmap section-padding">
+        <div class="section-header">
+            <h2 class="section-title">SYSTEM_ROADMAP</h2>
+            <div class="section-line"></div>
+        </div>
+
+        <div class="roadmap-grid">
+            <div class="roadmap-item active reveal-up">
+                <span class="roadmap-phase">PHASE_01 [CURRENT]</span>
+                <h3 class="roadmap-title">GENESIS</h3>
+                <ul class="roadmap-list">
+                    <li>Core AMM Launch</li>
+                    <li>Optimistic Oracle V1</li>
+                    <li>Initial Market Seeding</li>
+                </ul>
+            </div>
+            <div class="roadmap-item reveal-up">
+                <span class="roadmap-phase">PHASE_02</span>
+                <h3 class="roadmap-title">EXPANSION</h3>
+                <ul class="roadmap-list">
+                    <li>Cross-chain Bridging</li>
+                    <li>DAO Governance</li>
+                    <li>Mobile App Beta</li>
+                </ul>
+            </div>
+            <div class="roadmap-item reveal-up">
+                <span class="roadmap-phase">PHASE_03</span>
+                <h3 class="roadmap-title">MATURITY</h3>
+                <ul class="roadmap-list">
+                    <li>Institutional API</li>
+                    <li>Layer 3 Scaling</li>
+                    <li>Global Settlement Layer</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats / Data Section -->
+    <section class="stats section-padding">
+        <div class="stats-grid">
+            <div class="stat-item" data-scroll>
+                <div class="stat-value" data-target="245">0</div>
+                <div class="stat-label">TOTAL_MARKETS</div>
+            </div>
+            <div class="stat-item" data-scroll>
+                <div class="stat-value" data-target="12">0</div>
+                <div class="stat-label">TVL_MILLIONS</div>
+            </div>
+            <div class="stat-item" data-scroll>
+                <div class="stat-value" data-target="8500">0</div>
+                <div class="stat-label">ACTIVE_TRADERS</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- System Logs / Live Activity -->
+    <section class="system-logs section-padding">
+        <div class="section-header">
+            <h2 class="section-title">LIVE_FEED</h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="terminal-window reveal-up">
+            <div class="terminal-header">
+                <span class="terminal-dot red"></span>
+                <span class="terminal-dot yellow"></span>
+                <span class="terminal-dot green"></span>
+                <span class="terminal-title">bash -- system_monitor</span>
+            </div>
+            <div class="terminal-body" id="terminal-output">
+                <div class="log-line"><span class="log-time">[11:02:45]</span> <span class="log-info">SYSTEM</span>
+                    Initializing connection...</div>
+                <div class="log-line"><span class="log-time">[11:02:46]</span> <span class="log-success">SUCCESS</span>
+                    Connected to node us-east-4</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="cta-section section-padding">
+        <div class="cta-content reveal-up">
+            <h2 class="cta-title">READY_TO_PREDICT?</h2>
+            <p class="cta-subtitle">Join the consensus layer. Start trading on the future today.</p>
+            <button class="btn-large glitch-effect" data-text="LAUNCH_APP">
+                <span class="btn-content">LAUNCH_APP</span>
+                <span class="btn-decoration"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-col">
+                <h4>PREDICT_PROTOCOL</h4>
+                <p>The future is data.</p>
+            </div>
+            <div class="footer-col">
+                <a href="#">Github</a>
+                <a href="#">Twitter</a>
+                <a href="#">Discord</a>
+            </div>
+            <div class="footer-col">
+                <div class="system-status">
+                    <span class="status-dot"></span>
+                    ALL_SYSTEMS_OPERATIONAL
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
